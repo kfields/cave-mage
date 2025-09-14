@@ -1,0 +1,1 @@
+from cave_mage.character.controller import CharacterController
