@@ -1,6 +1,6 @@
 from crunge.engine.math import Bounds2
 from crunge.engine.d2.physics import PhysicsEngine2D
-from crunge.engine.d2.scene_layer_2d import SceneLayer2D
+from crunge.engine.d2.graph_layer_2d import GraphLayer2D
 
 from cave_mage.level import Level
 
@@ -23,7 +23,7 @@ class StartScene(Level):
                 "background", ":resources:/backgrounds/backgroundColorGrass.png"
             )
         )
-        self.butterfly_layer = butterfly_layer = SceneLayer2D("butterflies")
+        self.butterfly_layer = butterfly_layer = GraphLayer2D("butterflies")
         #butterflies = Butterflies.create_random(20, self.bounds)
         butterflies = Butterflies.create_random(20)
         self.butterfly_layer.attach(butterflies)

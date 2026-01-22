@@ -3,7 +3,7 @@ import glm
 
 from crunge.engine.d2.entity import StaticEntity2D
 from crunge.engine.d2.physics.geom import BoxGeom
-from crunge.engine.d2.scene_layer_2d import SceneLayer2D
+from crunge.engine.d2.graph_layer_2d import GraphLayer2D
 
 from cave_mage.constants import *
 
@@ -18,7 +18,7 @@ class Barrier(StaticEntity2D):
         super().__init__(position, scale=glm.vec2(width, height), geom=BoxGeom())
 
 
-class BarrierLayer(SceneLayer2D):
+class BarrierLayer(GraphLayer2D):
     def __init__(self, name: str):
         super().__init__(name)
         self.barrier_width = BARRIER_WIDTH
