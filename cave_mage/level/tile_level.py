@@ -2,7 +2,7 @@ from loguru import logger
 import glm
 
 from crunge.engine.d2.physics import PhysicsEngine2D
-from crunge.engine.d2.graph_layer_2d import GraphLayer2D
+from crunge.engine.d2.scene.layer import GraphLayer2D
 
 import cave_mage.globe
 from cave_mage.constants import *

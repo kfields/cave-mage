@@ -12,7 +12,7 @@ from cave_mage.characters import Robot
 
 
 class CharacterLayerBuilder(tiled_builder.DefaultObjectGroupBuilder):
-    def __init__(self, context: tiled_builder.BuilderContext):
+    def __init__(self):
         def create_node_cb(position, rotation, scale, sprite, properties: dict):
             logger.debug(f"create_node_cb: {position}, {sprite}, {properties}")
             kind = properties.get("type")
@@ -24,7 +24,7 @@ class CharacterLayerBuilder(tiled_builder.DefaultObjectGroupBuilder):
             return node
 
 
-        super().__init__(context, object_builder=DefaultObjectBuilder(context, create_node_cb=create_node_cb))
+        super().__init__(object_builder=DefaultObjectBuilder(create_node_cb=create_node_cb))
 
 kinds = {
     "PlayerCharacter": Avatar,
