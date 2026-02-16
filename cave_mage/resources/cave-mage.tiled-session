@@ -1,0 +1,66 @@
+{
+    "activeFile": "mossy-tileset.tsx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "/home/kurt/Dev/tyled/examples/sheet.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "butterflies.tsx": {
+            "scaleInDock": 1
+        },
+        "characters.tsx": {
+            "scaleInDock": 1
+        },
+        "items.tsx": {
+            "scaleInDock": 1
+        },
+        "level1.tmx": {
+            "scale": 0.05544140625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 9604.734728387233,
+                "y": 4220.672162333545
+            }
+        },
+        "mossy-background-decoration.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "mossy-tileset.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "obstacles.tsx": {
+            "scaleInDock": 1
+        },
+        "stickers.tsx": {
+            "scaleInDock": 1
+        },
+        "tiles.tsx": {
+            "scaleInDock": 1
+        }
+    },
+    "last.imagePath": "/home/kurt/Dev/cave-mage/cave_mage/resources",
+    "openFiles": [
+        "level1.tmx",
+        "mossy-background-decoration.tsx",
+        "mossy-tileset.tsx"
+    ],
+    "project": "cave-mage.tiled-project",
+    "recentFiles": [
+        "level1.tmx",
+        "mossy-background-decoration.tsx",
+        "mossy-tileset.tsx",
+        "/home/kurt/Dev/tyled/examples/sheet.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 128,
+        "width": 128
+    }
+}

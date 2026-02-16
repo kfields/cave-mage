@@ -1,3 +1,5 @@
+import glm
+
 from crunge.engine.d2.background import BackgroundVu
 from crunge.engine.d2.node_2d import Node2D
 from crunge.engine.loader.sprite.sprite_loader import SpriteLoader
@@ -14,7 +16,8 @@ class BackgroundLayer(TileLayer):
         
     def _create(self):
         super()._create()
-        sprite = self.sprite = SpriteLoader(sprite_builder=BackgroundSpriteBuilder()).load(":resources:/backgrounds/backgroundColorGrass.png")
-        node = self.node = Node2D(vu=BackgroundVu(), model=sprite)
+        #sprite = self.sprite = SpriteLoader(sprite_builder=BackgroundSpriteBuilder()).load(":resources:/backgrounds/toxic-background.jpg")
+        sprite = self.sprite = SpriteLoader(sprite_builder=BackgroundSpriteBuilder()).load(":resources:/backgrounds/ocean-view-water.jpg")
+        node = self.node = Node2D(position=glm.vec2(0, 512), vu=BackgroundVu(), model=sprite)
         self.attach(node)
 
