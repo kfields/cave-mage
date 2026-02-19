@@ -7,7 +7,7 @@ from crunge.engine.d2.physics import (
     DynamicPhysics,
     HullGeom,
 )
-from crunge.engine.d2.physics.kinematic import KinematicState
+from crunge.engine.d2.physics.kinematic import MotionState
 
 from crunge.engine.d2.sprite import SpriteVu
 
@@ -25,7 +25,7 @@ class KinematicCharacter(KinematicEntity2D):
         self.mass = PLAYER_MASS
 
     def on_mount(self, node: PhysicsEntity2D, point: glm.vec2):
-        self.kinematic_state = KinematicState.MOUNTED
+        self.motion_state = MotionState.MOUNTED
         self.position = node.get_tx_point(glm.vec2(point.x, point.y + self.height / 2 + 4))
         logger.debug(f"mounting at {self.position}")
         self.angle = node.angle
@@ -34,7 +34,7 @@ class KinematicCharacter(KinematicEntity2D):
         logger.debug(f"shapes: {self.shapes}")
 
     def on_dismount(self, node: PhysicsEntity2D, point: glm.vec2):
-        self.kinematic_state = KinematicState.FALLING
+        self.motion_state = MotionState.FALLING
         self.position = node.get_tx_point(glm.vec2(point.x, point.y + self.height / 2))
         self.angle = 0
         self.body.velocity = (0, 0)

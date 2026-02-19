@@ -85,7 +85,7 @@
 </data>
  </layer>
  <objectgroup id="10" name="pc">
-  <object id="14" gid="191" x="1788" y="894" width="128" height="128"/>
+  <object id="14" gid="191" x="3569.82" y="1106.12" width="128" height="128"/>
   <object id="15" gid="198" x="510" y="1024" width="128" height="128"/>
   <object id="35" gid="196" x="552.66" y="328.909" width="96" height="128"/>
  </objectgroup>
